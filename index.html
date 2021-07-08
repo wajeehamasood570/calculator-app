@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator App</title>
+</head>
+<body>
+
+<h1> CALCULATOR APP </h1>
+
+<div class="main">
+    <div class="head">
+    
+        <input id="result" class="text" type="text">
+    </div>
+
+    <div>
+        <div class="calcbody">
+            <button class="btn2" onclick="clearResult()">C</button>
+            <button class="btn2" onclick="backSpace()">&#8592;
+</button>
+            <button class="btn2" onclick="getNumber('%')">%</button>
+            <button class="btn1" onclick="getNumber('/')">&#247</button>
+        </div>
+
+        <div class="calcbody">
+            <button class="btn" onclick="getNumber('7')">7</button>
+            <button class="btn" onclick="getNumber('8')">8</button>
+            <button class="btn" onclick="getNumber('9')">9</button>
+            <button class="btn1" onclick="getNumber('*')">&#215</button>
+            
+        </div>
+        <div class="calcbody">
+            <button class="btn" onclick="getNumber('4')">4</button>
+            <button class="btn" onclick="getNumber('5')">5</button>
+            <button class="btn" onclick="getNumber('6')">6</button>
+            <button class="btn1" onclick="getNumber('-')">&#8722;</button>
+            
+        </div>
+        <div class="calcbody">
+            <button class="btn" onclick="getNumber('3')">3</button>
+            <button class="btn" onclick="getNumber('2')">2</button>
+            <button class="btn" onclick="getNumber('1')">1</button>
+            <button class="btn1" onclick="getNumber('+')">+</button>
+            
+          </div>
+          <div class="calcbody">
+            <button class="halfbtn" onclick="getNumber('0')">0</button>
+            <button class="btn3" onclick="getNumber('.')">&#46;</button>
+            <button class="btn1" onclick="getResult()">&#61</button>
+        </div>
+</div>
+</div>   
+</body>
+<script src="script.js">
+</script>
+</html>
